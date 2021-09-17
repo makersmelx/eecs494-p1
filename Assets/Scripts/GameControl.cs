@@ -12,7 +12,6 @@ public class GameControl : MonoBehaviour
     public const float GridHeight = 11;
 
     public GameObject player;
-    public float enemySpeed = 3;
     public bool moveCamera = false;
     public float playerMaxHealth = 3f;
     public int weaponMain, weaponAlt;
@@ -137,4 +136,5 @@ public class GameControl : MonoBehaviour
     {
         player.GetComponent<Inventory>().AlterRupees(change);
     }
+    
 }

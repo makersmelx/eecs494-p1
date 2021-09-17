@@ -6,21 +6,21 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     // Update is called once per frame
-
+    public GameObject player;
     public float moveDuration = 2.5f;
 
     IEnumerator MoveCameraCoroutine(Vector2 direction)
     {
-        float transitX = direction.x * GameControl.GridWidth;
-        float transitY = direction.y * GameControl.GridHeight;
+        float transitX = direction.normalized.x * GameControl.GridWidth;
+        float transitY = direction.normalized.y * GameControl.GridHeight;
         Vector3 transit = new Vector3(transitX, transitY, 0);
-        GameObject player = GameControl.Instance.player;
         player.SetActive(false);
         player.transform.position = (Vector2) player.transform.position + (2f * direction);
         yield return StartCoroutine(MoveObjectOverTime(transform, transform.position,
             transform.position + transit, moveDuration));
         // After moving Camera
         player.SetActive(true);
+        player.GetComponent<AnimatorControl>().SetAnimation2DAxis(direction);
         GameControl.Instance.UpdateBounds(transform.position);
     }
 

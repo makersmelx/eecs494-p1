@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 660972d508110b144a35dbe1073203a9
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5624816802889452426
+    second: NES - The Legend of Zelda - Dungeon Enemies_1
+  - first:
+      213: -258166553553586310
+    second: NES - The Legend of Zelda - Dungeon Enemies_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -60,7 +66,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
+  ignorePngGamma: 1
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -123,7 +129,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,6 +137,48 @@ TextureImporter:
       bones: []
       spriteID: 1c6ecfbeeeb0acaa0800000000000000
       internalID: -6140082021176908095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - The Legend of Zelda - Dungeon Enemies_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bcfd6a41d5f0e40800000000000000
+      internalID: 5624816802889452426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - The Legend of Zelda - Dungeon Enemies_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a773d8a23eeca6cf0800000000000000
+      internalID: -258166553553586310
       vertices: []
       indices: 
       edges: []

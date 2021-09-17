@@ -7,24 +7,23 @@ public class DoorControl : MonoBehaviour
 {
     private int _gridNumber;
     public bool locked = false;
+    public GameObject trigger;
 
     void Start()
     {
         Transform[] allTransform = GetComponentsInChildren<Transform>();
         _gridNumber = allTransform.Length;
-        BoxCollider[] allBoxCollider = GetComponentsInChildren<BoxCollider>();
         Door[] allDoors = GetComponentsInChildren<Door>();
-
-        foreach (BoxCollider itr in allBoxCollider)
+        foreach (Door itr in allDoors)
         {
             itr.gameObject.layer = locked ? 0 : 6;
         }
     }
 
-    // Update is called once per frame
+    // This is the door that uses the key to open
     public void TryOpenLockedDoor(Collision other)
     {
-        if (locked)
+        if (trigger == null && locked)
         {
             GameObject otherGameObject = other.gameObject;
             if (otherGameObject.CompareTag("Player"))
@@ -35,19 +34,20 @@ public class DoorControl : MonoBehaviour
                     locked = false;
                     playerInventory.AlterKeys(-1);
                     // unlock all doors
-                    Door[] allDoors = GetComponentsInChildren<Door>();
-                    foreach (Door door in allDoors)
-                    {
-                        UnLockDoor(door.gameObject);
-                    }
+                    UnLockDoors();
                 }
             }
         }
     }
 
-    public void UnLockDoor(GameObject doorGameObject)
+
+    public void UnLockDoors()
     {
-        doorGameObject.layer = 6;
-        doorGameObject.GetComponent<Door>().UnLockChangeSprite();
+        Door[] allDoors = GetComponentsInChildren<Door>();
+        foreach (Door door in allDoors)
+        {
+            door.gameObject.layer = 6;
+            door.gameObject.GetComponent<Door>().UnLockChangeSprite();
+        }
     }
 }
