@@ -53,8 +53,15 @@ public class AnimatorControl : MonoBehaviour
         else
         {
             // wait for the frames to follow
-            _animator.speed = 1;
-            SetAnimation2DAxis(Vector2.zero);
+            if (!IsMoveAnimation())
+            {
+                _animator.speed = 1;
+                SetAnimation2DAxis(Vector2.zero);
+            }
+            else
+            {
+                _animator.speed = 0;
+            }
         }
     }
 

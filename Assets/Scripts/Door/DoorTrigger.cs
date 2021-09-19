@@ -8,72 +8,87 @@ public class DoorTrigger : MonoBehaviour
     // Start is called before the first frame update
     public float pushBlockTime = 2f;
     public float mass = 1000f;
-    public Vector3 movePath;
+    private Vector3 _moveDirection;
     private Vector3 _originalPosition;
     private Coroutine _currentPush;
-
+    private bool _canMove;
+    private bool _triggered;
 
     void Start()
     {
+        AddRigidBody();
         _originalPosition = transform.position;
+        ResetTrigger();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!onMovePathOfTrigger())
+        if (_canMove && !_triggered)
         {
-            Rigidbody rb = GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                Destroy(rb);
-            }
-
-            transform.position = (_originalPosition - transform.position).magnitude >
-                                 movePath.magnitude
-                ? _originalPosition + movePath
-                : _originalPosition;
-        }
-
-        if (transform.position.Equals(_originalPosition + movePath))
-        {
-            print("OK");
+            StartCoroutine(MoveObjectOverTime(gameObject.transform, transform.position,
+                transform.position + _moveDirection.normalized, 0.8f));
             GetComponentInParent<DoorControl>().UnLockDoors();
+            _triggered = true;
         }
     }
 
-    IEnumerator WaitThenPush()
+    IEnumerator WaitThenPush(Vector3 direction)
     {
         yield return new WaitForSeconds(pushBlockTime);
-        AddRigidBody();
-
+        _moveDirection = direction;
+        _canMove = true;
         yield return null;
     }
 
-    private void OnCollisionEnter(Collision other)
+    IEnumerator MoveObjectOverTime(Transform target, Vector3 initial, Vector3 dest, float duration)
+    {
+        float initialTime = Time.time;
+        float progress = 0;
+        while (progress < 1.0f)
+        {
+            progress = (Time.time - initialTime) / duration;
+            Vector3 newPosition = Vector3.Lerp(initial, dest, progress);
+            target.position = newPosition;
+            yield return null;
+        }
+
+        target.position = dest;
+    }
+
+    private void OnCollisionStay(Collision other)
     {
         if (!other.gameObject.CompareTag("Player"))
         {
             return;
         }
 
-        _currentPush = StartCoroutine(WaitThenPush());
+        if (!_triggered && (Vector2) other.contacts[0].normal ==
+            other.gameObject.GetComponent<PlayerControl>().GetInput())
+        {
+            if (_currentPush == null)
+            {
+                _currentPush =
+                    StartCoroutine(WaitThenPush(other.contacts[0].normal));
+            }
+        }
+        else
+        {
+            if (_currentPush != null)
+            {
+                StopCoroutine(_currentPush);
+            }
+        }
     }
 
     private void OnCollisionExit(Collision other)
     {
-        if (!other.gameObject.CompareTag("Player"))
+        if (_currentPush != null)
         {
-            return;
-        }
-
-        StopCoroutine(_currentPush);
-        Rigidbody rb = GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            Destroy(rb);
+            StopCoroutine(_currentPush);
         }
     }
+
 
     private void AddRigidBody()
     {
@@ -82,22 +97,17 @@ public class DoorTrigger : MonoBehaviour
             gameObject.AddComponent<Rigidbody>();
             Rigidbody rb = gameObject.GetComponent<Rigidbody>();
             rb.mass = mass;
-            rb.isKinematic = false;
+            rb.isKinematic = true;
             rb.useGravity = false;
-            rb.constraints = RigidbodyConstraints.FreezeRotation
-                             | RigidbodyConstraints.FreezePositionZ
-                             | RigidbodyConstraints.FreezePositionY;
+            rb.constraints = RigidbodyConstraints.FreezeRotation;
         }
     }
 
-    private bool onMovePathOfTrigger()
+    public void ResetTrigger()
     {
-        Vector3 shift = transform.position - _originalPosition;
-        print(_originalPosition);
-        print(movePath);
-        print(shift);
-        print("=============");
-        return shift.Equals(Vector3.zero) ||
-               (shift.normalized.Equals(movePath.normalized) && shift.magnitude <= movePath.magnitude);
+        transform.position = _originalPosition;
+        _triggered = false;
+        _canMove = false;
+        _currentPush = null;
     }
 }

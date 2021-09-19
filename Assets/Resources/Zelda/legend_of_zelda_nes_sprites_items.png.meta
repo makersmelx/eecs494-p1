@@ -1,0 +1,1140 @@
+fileFormatVersion: 2
+guid: fcc24100c399554429c64fec2bd8cbc7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6980707387065836596
+    second: legend_of_zelda_nes_sprites_items_0
+  - first:
+      213: 3747805377511697630
+    second: legend_of_zelda_nes_sprites_items_1
+  - first:
+      213: -1568264511864775432
+    second: legend_of_zelda_nes_sprites_items_2
+  - first:
+      213: -5072501757456600472
+    second: legend_of_zelda_nes_sprites_items_3
+  - first:
+      213: -2664673249696538541
+    second: legend_of_zelda_nes_sprites_items_4
+  - first:
+      213: -4300940537623558905
+    second: legend_of_zelda_nes_sprites_items_5
+  - first:
+      213: 50131235516677847
+    second: legend_of_zelda_nes_sprites_items_6
+  - first:
+      213: 3137923050575678293
+    second: legend_of_zelda_nes_sprites_items_7
+  - first:
+      213: 4548901299410701981
+    second: legend_of_zelda_nes_sprites_items_8
+  - first:
+      213: 1510454869093939710
+    second: legend_of_zelda_nes_sprites_items_9
+  - first:
+      213: -5148968729858487455
+    second: legend_of_zelda_nes_sprites_items_10
+  - first:
+      213: -7516705296258487391
+    second: legend_of_zelda_nes_sprites_items_11
+  - first:
+      213: 8911495606523353453
+    second: legend_of_zelda_nes_sprites_items_12
+  - first:
+      213: -1767900150848407613
+    second: legend_of_zelda_nes_sprites_items_13
+  - first:
+      213: -6850269699376173811
+    second: legend_of_zelda_nes_sprites_items_14
+  - first:
+      213: -2104285732415353261
+    second: legend_of_zelda_nes_sprites_items_15
+  - first:
+      213: 3289592909478171889
+    second: legend_of_zelda_nes_sprites_items_16
+  - first:
+      213: -1073775808740337584
+    second: legend_of_zelda_nes_sprites_items_17
+  - first:
+      213: -3357505393676898888
+    second: legend_of_zelda_nes_sprites_items_18
+  - first:
+      213: 5601222083340151998
+    second: legend_of_zelda_nes_sprites_items_19
+  - first:
+      213: 1230916071985165731
+    second: legend_of_zelda_nes_sprites_items_20
+  - first:
+      213: 1774971593640554118
+    second: legend_of_zelda_nes_sprites_items_21
+  - first:
+      213: -8711686131386199485
+    second: legend_of_zelda_nes_sprites_items_22
+  - first:
+      213: -7714253095652559921
+    second: legend_of_zelda_nes_sprites_items_23
+  - first:
+      213: -5433521896439682327
+    second: legend_of_zelda_nes_sprites_items_24
+  - first:
+      213: 5823963039039662066
+    second: legend_of_zelda_nes_sprites_items_25
+  - first:
+      213: 214182233593709191
+    second: legend_of_zelda_nes_sprites_items_26
+  - first:
+      213: 4668516940182025708
+    second: legend_of_zelda_nes_sprites_items_27
+  - first:
+      213: -4977858326710021364
+    second: legend_of_zelda_nes_sprites_items_28
+  - first:
+      213: -1689202178077411257
+    second: legend_of_zelda_nes_sprites_items_29
+  - first:
+      213: -3358291621563840991
+    second: legend_of_zelda_nes_sprites_items_30
+  - first:
+      213: -9216881517895523013
+    second: legend_of_zelda_nes_sprites_items_31
+  - first:
+      213: 3674789222653145108
+    second: legend_of_zelda_nes_sprites_items_32
+  - first:
+      213: -5763104923256115583
+    second: legend_of_zelda_nes_sprites_items_33
+  - first:
+      213: -3195808996239484009
+    second: legend_of_zelda_nes_sprites_items_34
+  - first:
+      213: -5028792745171985247
+    second: legend_of_zelda_nes_sprites_items_35
+  - first:
+      213: 4273544713924193865
+    second: legend_of_zelda_nes_sprites_items_36
+  - first:
+      213: -355963645722158674
+    second: legend_of_zelda_nes_sprites_items_37
+  - first:
+      213: -5550098766892431143
+    second: legend_of_zelda_nes_sprites_items_38
+  - first:
+      213: 1854266716937715268
+    second: legend_of_zelda_nes_sprites_items_39
+  - first:
+      213: -7928947030357419632
+    second: legend_of_zelda_nes_sprites_items_40
+  - first:
+      213: -3146774657460195940
+    second: legend_of_zelda_nes_sprites_items_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 120
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbdef8ed9b8f1f90800000000000000
+      internalID: -6980707387065836596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 120
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc22e55221e20430800000000000000
+      internalID: 3747805377511697630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 131
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcd2784cb76c3ae0800000000000000
+      internalID: -1568264511864775432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 124
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8623140e68ada99b0800000000000000
+      internalID: -5072501757456600472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 121
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3502a552ccd250bd0800000000000000
+      internalID: -2664673249696538541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 120
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705cede4e5dff44c0800000000000000
+      internalID: -4300940537623558905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_6
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 124
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de7f15d71a12b000800000000000000
+      internalID: 50131235516677847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_7
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 120
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bc21a93642c8b20800000000000000
+      internalID: 3137923050575678293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_8
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 120
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e00b571a1f02f30800000000000000
+      internalID: 4548901299410701981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_9
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 126
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef97a9163b636f410800000000000000
+      internalID: 1510454869093939710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_10
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 120
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16bc03978303b88b0800000000000000
+      internalID: -5148968729858487455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab2737bb5c4fa790800000000000000
+      internalID: -7516705296258487391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_12
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 80
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69574cf90efbab70800000000000000
+      internalID: 8911495606523353453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 82
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c73256fd282777e0800000000000000
+      internalID: -1767900150848407613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_14
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 80
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0daf01b004fee0a0800000000000000
+      internalID: -6850269699376173811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_15
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 80
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ec57d76431cc2e0800000000000000
+      internalID: -2104285732415353261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_16
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 80
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f41719725bf6ad20800000000000000
+      internalID: 3289592909478171889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_17
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 82
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058df9f479e2911f0800000000000000
+      internalID: -1073775808740337584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_18
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 80
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd2e6e12aeb761d0800000000000000
+      internalID: -3357505393676898888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc2099eec98bbd40800000000000000
+      internalID: 5601222083340151998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_20
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 80
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5bef255a7151110800000000000000
+      internalID: 1230916071985165731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_21
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 40
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68eaa5d9247f1a810800000000000000
+      internalID: 1774971593640554118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_22
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 46
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3425708be9fd91780800000000000000
+      internalID: -8711686131386199485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_23
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 40
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3fb2e6ea771f490800000000000000
+      internalID: -7714253095652559921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_24
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 44
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eae76b8f904894b0800000000000000
+      internalID: -5433521896439682327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_25
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 40
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7a6fef68fd2d050800000000000000
+      internalID: 5823963039039662066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_26
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 40
+        width: 4
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7828d8e4b9de8f200800000000000000
+      internalID: 214182233593709191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_27
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 40
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce571771c67e9c040800000000000000
+      internalID: 4668516940182025708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_28
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 41
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c039a36c9381beab0800000000000000
+      internalID: -4977858326710021364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_29
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 40
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74831ed919fbe88e0800000000000000
+      internalID: -1689202178077411257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_30
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 7
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126448c2093f461d0800000000000000
+      internalID: -3358291621563840991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_31
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3569f4b71f071080800000000000000
+      internalID: -9216881517895523013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_32
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 11
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410bca004597ff230800000000000000
+      internalID: 3674789222653145108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_33
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 4
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ea3064b965500b0800000000000000
+      internalID: -5763104923256115583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_34
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bd52966a436a3d0800000000000000
+      internalID: -3195808996239484009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_35
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac56f654a3263ab0800000000000000
+      internalID: -5028792745171985247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_36
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 4
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e233d664eae4b30800000000000000
+      internalID: 4273544713924193865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_37
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea917cf33fc5f0bf0800000000000000
+      internalID: -355963645722158674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_38
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 3
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d80b03c3961af2b0800000000000000
+      internalID: -5550098766892431143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_39
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 3
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ef6e531cdabb910800000000000000
+      internalID: 1854266716937715268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09958ac6fa8b6f190800000000000000
+      internalID: -7928947030357419632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legend_of_zelda_nes_sprites_items_41
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d22e11f196454d0800000000000000
+      internalID: -3146774657460195940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

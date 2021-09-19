@@ -25,6 +25,12 @@ public class DoorMoveCamera : MonoBehaviour
         {
             otherGameObject.transform.position = transform.position;
             GameControl.Instance.MoveCamera(doorDirection);
+            RoomReset roomReset = GetComponentInParent<RoomReset>();
+            if (roomReset != null)
+            {
+                print(roomReset.name);
+                roomReset.ResetRoom();
+            }
         }
     }
 }

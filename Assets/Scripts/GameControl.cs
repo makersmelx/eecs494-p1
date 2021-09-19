@@ -25,6 +25,8 @@ public class GameControl : MonoBehaviour
     private bool _godMode = false;
     private float _playerHealth;
 
+    private bool _enablePlayerControl;
+
     private void Awake()
     {
         if (Instance == null)
@@ -44,6 +46,7 @@ public class GameControl : MonoBehaviour
         UpdateBounds(new Vector2(39.5f, 6.5f));
         weaponMain = 0;
         weaponAlt = 1;
+        _enablePlayerControl = true;
     }
 
     private void Update()
@@ -81,7 +84,12 @@ public class GameControl : MonoBehaviour
 
     public bool PlayerControlEnabled()
     {
-        return AnimatorControl.Instance.IsMoveAnimation() && !moveCamera;
+        return _enablePlayerControl && AnimatorControl.Instance.IsMoveAnimation() && !moveCamera;
+    }
+
+    public void SetPlayerControl(bool value)
+    {
+        _enablePlayerControl = value;
     }
 
     public void EnterGodMode()
@@ -136,5 +144,4 @@ public class GameControl : MonoBehaviour
     {
         player.GetComponent<Inventory>().AlterRupees(change);
     }
-    
 }

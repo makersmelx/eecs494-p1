@@ -26,7 +26,7 @@ public class PlayerControl : MonoBehaviour
         _rigidbody.velocity = GameControl.Instance.PlayerControlEnabled() ? GetInput() * movementSpeed : Vector2.zero;
     }
 
-    Vector2 GetInput()
+    public Vector2 GetInput()
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
