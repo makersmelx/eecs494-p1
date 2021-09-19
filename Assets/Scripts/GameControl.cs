@@ -12,6 +12,7 @@ public class GameControl : MonoBehaviour
     public const float GridHeight = 11;
 
     public GameObject player;
+
     public bool moveCamera = false;
     public float playerMaxHealth = 3f;
     public int weaponMain, weaponAlt;
@@ -44,8 +45,9 @@ public class GameControl : MonoBehaviour
         _playerHealth = playerMaxHealth;
         sprites = Resources.LoadAll<Sprite>("Zelda/TileSpriteSheet");
         UpdateBounds(new Vector2(39.5f, 6.5f));
-        weaponMain = 0;
-        weaponAlt = 1;
+
+        weaponMain = 2;
+        weaponAlt = 3;
         _enablePlayerControl = true;
     }
 

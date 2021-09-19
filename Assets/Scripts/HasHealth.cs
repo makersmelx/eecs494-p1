@@ -8,10 +8,13 @@ public class HasHealth : MonoBehaviour
 
     private float _health;
 
+    public float _weapon_damage;
+
     // Start is called before the first frame update
     void Start()
     {
         _health = maxHealth;
+        _weapon_damage = 0;
     }
 
     // Update is called once per frame
@@ -30,7 +33,8 @@ public class HasHealth : MonoBehaviour
         if (collisionGameObject.CompareTag("Weapon"))
         {
             // todo: fix that different weapons have different damage @yuyuetu
-            _health -= 0.5f;
+            _health -= _weapon_damage;
         }
     }
+
 }
