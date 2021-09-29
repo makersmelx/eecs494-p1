@@ -16,7 +16,12 @@ public class CanAttack : MonoBehaviour
         GameObject object_collided = collision.collider.gameObject;
         if (object_collided.CompareTag("Player"))
         {
-            GameControl.Instance.AlterHealth(-attack);
+            if (!GameControl.Instance.player.GetComponent<PlayerControl>().in_knockback_delay)
+            {
+                GameControl.Instance.AlterHealth(-attack);
+                GameControl.Instance.player.GetComponent<PlayerControl>().playerKnockBack(50f);
+            }
+            
         }
     }
 }

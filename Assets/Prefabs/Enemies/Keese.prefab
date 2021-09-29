@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 8461361705367351222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 38.98, y: 6.94, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -103,7 +103,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &81521234741513001
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.1, z: 0.2}
+  m_Size: {x: 1, y: 0.6, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7488678249491280524
 MonoBehaviour:
@@ -142,7 +142,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7235d0a5157537d439b86c9ce2e72d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  is_boss: 0
+  maxHealth: 0.5
+  monster_dead_sound_clip: {fileID: 8300000, guid: 4e2c6c30fbcb84527a0f2acf57524aab, type: 3}
+  monster_attacked_sound_clip: {fileID: 0}
+  drop_item: {fileID: 0}
 --- !u!114 &2241179372182215633
 MonoBehaviour:
   m_ObjectHideFlags: 0

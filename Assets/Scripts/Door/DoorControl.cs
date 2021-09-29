@@ -5,16 +5,13 @@ using UnityEngine;
 
 public class DoorControl : MonoBehaviour
 {
-    private int _gridNumber;
     public bool locked = false;
     public bool triggered = false;
-    public GameObject trigger;
     private Door[] _allDoors;
 
     void Start()
     {
         Transform[] allTransform = GetComponentsInChildren<Transform>();
-        _gridNumber = allTransform.Length;
         _allDoors = GetComponentsInChildren<Door>();
         foreach (Door itr in _allDoors)
         {
@@ -25,7 +22,7 @@ public class DoorControl : MonoBehaviour
     // This is the door that uses the key to open
     public void TryOpenLockedDoor(Collision other)
     {
-        if (trigger == null && locked)
+        if (!triggered && locked)
         {
             GameObject otherGameObject = other.gameObject;
             if (otherGameObject.CompareTag("Player"))
@@ -60,6 +57,11 @@ public class DoorControl : MonoBehaviour
             {
                 door.ResetDoor();
                 door.gameObject.layer = triggered ? 0 : 6;
+            }
+
+            foreach (DoorRequireClearEnemy elem in GetComponentsInChildren<DoorRequireClearEnemy>())
+            {
+                elem.ResetEnemyTrigger();
             }
         }
     }

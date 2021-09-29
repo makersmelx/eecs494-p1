@@ -9,9 +9,7 @@ public class CorrectPosition : MonoBehaviour
 
     private void Update()
     {
-        float horizontalTrial = Input.GetAxisRaw("Horizontal");
-        float verticalTrial = Input.GetAxisRaw("Vertical");
-        if (Math.Abs(horizontalTrial) > 0.0f)
+        if (GetComponent<PlayerControl>().GetInput().x != 0f)
         {
             float deltaY = transform.position.y % 1f;
             float deltaYAbs = Math.Abs(deltaY);
@@ -30,7 +28,7 @@ public class CorrectPosition : MonoBehaviour
             }
         }
 
-        if (Math.Abs(verticalTrial) > 0.0f)
+        if (GetComponent<PlayerControl>().GetInput().y != 0f)
         {
             float deltaX = transform.position.x % 1f;
             float deltaXAbs = Math.Abs(deltaX);

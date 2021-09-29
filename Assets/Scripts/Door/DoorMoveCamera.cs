@@ -21,16 +21,11 @@ public class DoorMoveCamera : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         GameObject otherGameObject = other.gameObject;
-        if (otherGameObject.CompareTag("Player"))
+        if (otherGameObject.CompareTag("Player") && GameControl.Instance.PlayerControlEnabled())
         {
             otherGameObject.transform.position = transform.position;
             GameControl.Instance.MoveCamera(doorDirection);
-            RoomReset roomReset = GetComponentInParent<RoomReset>();
-            if (roomReset != null)
-            {
-                print(roomReset.name);
-                roomReset.ResetRoom();
-            }
+            RoomControl.ResetRoomOfGameObject(gameObject);
         }
     }
 }

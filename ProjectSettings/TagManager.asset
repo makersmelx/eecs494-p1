@@ -10,6 +10,19 @@ TagManager:
   - Heart
   - Key
   - Monster
+  - Wallmaster
+  - Bow
+  - AdvRupee
+  - Boomerang
+  - Lava
+  - Tree
+  - Anchor
+  - Hog
+  - Fire
+  - Hook
+  - HookCollectable
+  - Fire
+  - HogRoomFire
   layers:
   - Default
   - TransparentFX
@@ -23,15 +36,15 @@ TagManager:
   - FlyingEnemy
   - FlyingEnemyCannotCollide
   - Dragon
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Wallmaster
+  - Lava
+  - Hook
+  - OnlyEnemyCollide
+  - Hog
+  - Spike
+  - Tree
+  - FallingEnemy
+  - Fire
   - 
   - 
   - 

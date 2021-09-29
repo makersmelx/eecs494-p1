@@ -1,3 +1,12 @@
-﻿fileFormatVersion: 2
+fileFormatVersion: 2
 guid: 67a7efe6570d491990f6edd50ec91f03
-timeCreated: 1631463142
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _door_open_sound_clip: {fileID: 8300000, guid: 4ff01c9f34d0b4a2584c0abad0bd5079, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

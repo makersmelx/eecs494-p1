@@ -4,36 +4,82 @@ using UnityEngine;
 
 public class HasHealth : MonoBehaviour
 {
-    public float maxHealth = 1;
 
+
+    public bool is_boss = false;
+    public float maxHealth = 1;
     private float _health;
 
-    public float _weapon_damage;
+    public AudioClip monster_dead_sound_clip;
+    public AudioClip monster_attacked_sound_clip;
+    public GameObject drop_item;
 
-    // Start is called before the first frame update
-    void Start()
+    private Color _color;
+    private Rigidbody _rb;
+
+    private bool in_delay = false;
+
+    private void Start()
     {
         _health = maxHealth;
-        _weapon_damage = 0;
+        _color = GetComponent<SpriteRenderer>().color;
+        _rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (_health <= 0.0f)
+        if (_health <= 0)
         {
+            if (drop_item != null)
+            {
+                Instantiate(drop_item, transform.position, Quaternion.identity);
+            }
             Destroy(this.gameObject);
+            AudioSource.PlayClipAtPoint(monster_dead_sound_clip, Camera.main.transform.position);
+            if (monster_attacked_sound_clip != null)
+            {
+                AudioSource.PlayClipAtPoint(monster_attacked_sound_clip, Camera.main.transform.position);
+            }
         }
+
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void AlterHealth(float damage)
     {
-        GameObject collisionGameObject = collision.collider.gameObject;
+        _health -= damage;
+    }
 
-        if (collisionGameObject.CompareTag("Weapon"))
+    public void Knockback(Vector3 origin_pos)
+    {
+        if (!is_boss)
         {
-            // todo: fix that different weapons have different damage @yuyuetu
-            _health -= _weapon_damage;
+            _rb.AddForce(40f * Vector3.Normalize(_rb.transform.position - origin_pos), ForceMode.Impulse);
+        }
+        this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1);
+        in_delay = true;
+        if (this.gameObject.GetComponent<Animator>() != null)
+            this.gameObject.GetComponent<Animator>().speed = 0;
+        StartCoroutine(restore());
+
+    }
+
+    IEnumerator restore()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        this.gameObject.GetComponent<SpriteRenderer>().color = _color;
+        in_delay = false;
+        if (this.gameObject.GetComponent<Animator>() != null)
+            this.gameObject.GetComponent<Animator>().speed = 1;
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Weapon") && !in_delay && _health > 0)
+        {
+            Knockback(other.transform.position);
+            StartCoroutine(restore());
         }
     }
 

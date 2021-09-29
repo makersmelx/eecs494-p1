@@ -9,6 +9,34 @@ public class CameraControl : MonoBehaviour
     public GameObject player;
     public float moveDuration = 2.5f;
 
+    public static CameraControl Instance;
+
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
+    public void MoveCamera(Vector2 direction)
+    {
+        StartCoroutine(MoveCameraCoroutine(direction));
+    }
+
+    public void Reset()
+    {
+        StartCoroutine(ResetCoroutine());
+    }
+
+
+
     IEnumerator MoveCameraCoroutine(Vector2 direction)
     {
         float transitX = direction.normalized.x * GameControl.GridWidth;
@@ -24,10 +52,19 @@ public class CameraControl : MonoBehaviour
         GameControl.Instance.UpdateBounds(transform.position);
     }
 
-    public void MoveCamera(Vector2 direction)
+    IEnumerator ResetCoroutine()
     {
-        StartCoroutine(MoveCameraCoroutine(direction));
+        player.SetActive(false);
+        Vector3 start_point = new Vector3(39.5f, 6.5f, -34.15f);
+        yield return StartCoroutine(MoveObjectOverTime(transform, transform.position,
+            start_point, moveDuration));
+        // After moving Camera
+        player.SetActive(true);
+        player.GetComponent<AnimatorControl>().SetAnimation2DAxis(start_point - transform.position);
+        GameControl.Instance.UpdateBounds(transform.position);
     }
+
+  
 
     public static IEnumerator MoveObjectOverTime(Transform target, Vector3 initial, Vector3 dest, float duration)
     {

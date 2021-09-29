@@ -51,8 +51,11 @@ public class TextDisplayer : MonoBehaviour
     string WeaponStatusToString(int type)
     {
         if (type == 0) return "SWORD";
-        if (type == 1) return "BOW";
-        return "";
+        if (type == 2) return "BOOMERANG";
+        if (type == 1) return "BOMB";
+        if (type == 3) return "BOW";
+        if (type == 4) return "HOOK";
+        return "NULL";
         
     }
 }

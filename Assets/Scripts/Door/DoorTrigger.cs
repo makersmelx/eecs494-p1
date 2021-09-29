@@ -28,7 +28,12 @@ public class DoorTrigger : MonoBehaviour
         {
             StartCoroutine(MoveObjectOverTime(gameObject.transform, transform.position,
                 transform.position + _moveDirection.normalized, 0.8f));
-            GetComponentInParent<DoorControl>().UnLockDoors();
+            DoorControl doorControl = GetComponentInParent<DoorControl>();
+            if (doorControl != null)
+            {
+                doorControl.UnLockDoors();
+            }
+
             _triggered = true;
         }
     }
@@ -59,6 +64,11 @@ public class DoorTrigger : MonoBehaviour
     private void OnCollisionStay(Collision other)
     {
         if (!other.gameObject.CompareTag("Player"))
+        {
+            return;
+        }
+
+        if (!RoomControl.CheckAllEnemyDeadInRoom(gameObject))
         {
             return;
         }

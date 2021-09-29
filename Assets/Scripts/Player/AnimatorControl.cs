@@ -32,9 +32,9 @@ public class AnimatorControl : MonoBehaviour
     {
         if (GameControl.Instance.PlayerControlEnabled())
         {
-            _animator.SetFloat("verticalInput", Input.GetAxisRaw("Vertical"));
-            _animator.SetFloat("horizontalInput", Input.GetAxisRaw("Horizontal"));
-            if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0)
+            Vector2 setting = GetComponent<PlayerControl>().GetInput();
+            SetAnimation2DAxis(setting);
+            if (setting.Equals(Vector2.zero))
             {
                 _animator.speed = 0;
             }
@@ -43,7 +43,7 @@ public class AnimatorControl : MonoBehaviour
                 _animator.speed = 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.X))
+            if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Z))
             {
                 _animator.speed = 1;
                 _animator.ResetTrigger("attack");

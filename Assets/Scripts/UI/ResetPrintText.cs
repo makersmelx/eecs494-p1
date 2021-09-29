@@ -24,7 +24,6 @@ public class ResetPrintText : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        print("hi");
         GameObject otherGameObject = other.gameObject;
         if (otherGameObject.CompareTag("Player"))
         {

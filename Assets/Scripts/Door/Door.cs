@@ -1,43 +1,52 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+// In this project, a Door must be placed as a child of DoorControl
 // Manage Door's sprite here
+// Collision layer of the door is maintained by DoorControl
 public class Door : MonoBehaviour
 {
-    public bool isTriggerDoor;
     private SpriteRenderer _spriteRenderer;
     private int _originalIndex;
-    private bool _isBackFromDoor;
+
+    public AudioClip _door_open_sound_clip;
 
     // Start is called before the first frame update
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        _originalIndex = Int32.Parse(_spriteRenderer.sprite.name.Substring(2, 3));
-        _isBackFromDoor = false;
+        try
+        {
+            _originalIndex = Int32.Parse(_spriteRenderer.sprite.name.Substring(2, 3));
+        }
+        catch (FormatException e)
+        {
+            _originalIndex = 0;
+        }
+
+        if (GetComponentInParent<DoorControl>().triggered)
+        {
+            gameObject.AddComponent<DoorOpenThenClose>();
+        }
+
+        gameObject.AddComponent<BoxCollider>();
     }
 
     private void Update()
     {
-        // Reset the door when the player comes by transition and then leaves the exact block
-        if (_isBackFromDoor && isTriggerDoor && gameObject.layer == 6)
+        Vector3 playerPosition = GameControl.Instance.player.transform.position;
+        if (Math.Abs(playerPosition.x - transform.position.x) <= 1 &&
+            Math.Abs(playerPosition.y - transform.position.y) <= 1)
         {
-            Vector3 playerPosition = GameControl.Instance.player.transform.position;
-            if (Math.Abs(playerPosition.x - transform.position.x) >= 1 ||
-                Math.Abs(playerPosition.y - transform.position.y) >= 1)
-            {
-                GetComponentInParent<DoorControl>().ResetDoors();
-                _isBackFromDoor = false;
-            }
+            RoomControl.WelcomePlayerIntoRoom(gameObject);
         }
     }
 
-
     private void OnCollisionStay(Collision other)
     {
-        if (other.gameObject.CompareTag("Player") && !GameControl.Instance.PlayerControlEnabled())
+        if (!other.gameObject.CompareTag("Player") || !GameControl.Instance.PlayerControlEnabled())
         {
             return;
         }
@@ -56,18 +65,11 @@ public class Door : MonoBehaviour
         doorControl.TryOpenLockedDoor(other);
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if ((other.transform.position - transform.position).magnitude <= 0.3)
-        {
-            GetComponentInParent<DoorControl>().UnLockDoors();
-            _isBackFromDoor = true;
-        }
-    }
-
 
     public void UnLockChangeSprite()
     {
+        AudioSource.PlayClipAtPoint(_door_open_sound_clip, Camera.main.transform.position);
+
         Sprite sprite = _spriteRenderer.sprite;
         // todo: implement left/right faced door
         if (sprite.name == "t_080")
@@ -82,9 +84,20 @@ public class Door : MonoBehaviour
         {
             _spriteRenderer.sprite = GameControl.Instance.sprites[48];
         }
+        else if (sprite.name == "t_100")
+        {
+            _spriteRenderer.sprite = GameControl.Instance.sprites[51];
+        }
         else if (sprite.name == "t_094")
         {
-            _spriteRenderer.sprite = GameControl.Instance.sprites[48];
+            if (GetComponentInParent<DoorControl>().GetComponentInChildren<DoorMoveCamera>().doorDirection.x > 0)
+            {
+                _spriteRenderer.sprite = GameControl.Instance.sprites[48];
+            }
+            else
+            {
+                _spriteRenderer.sprite = GameControl.Instance.sprites[51];
+            }
         }
     }
 
